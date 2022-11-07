@@ -16,7 +16,7 @@ This post is a step-by-step implementation of my approach to calculating the ADM
 *   [x] **H-Bond Donors**
 *   [x] **Ring Count**
 *   [x] **Aromatic Ring Count**
-*   [ ] **Stereo Centers**
+*   [x] **Stereo Centers**
 *   [x] **Molar Refractivity**
 *   [x] **tPSA**
 *   [x] **LogP**
