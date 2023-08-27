@@ -76,7 +76,7 @@ Note of the advanced machine learning module is upload in github and save as pri
 
 ### **Metabolism:**
 
-*   [ ] **CYP450 inhibitor/substrate**
+*   **CYP450 inhibitor/substrate**
 *   [x] **1A2** Using RF and SVM with ECFP4, ECFP6, MorganFingerprint ( Different Accuracy, Precesion, FPR, Specifivity, ACC, F1 Score)
 *   [x] **2C9**Using RF and SVM with ECFP4, ECFP6, MorganFingerprint ( Different Accuracy, Precesion, FPR, Specifivity, ACC, F1 Score)
 *   [x] **2C19**Using RF and SVM with ECFP4, ECFP6, MorganFingerprint ( Different Accuracy, Precesion, FPR, Specifivity, ACC, F1 Score)
