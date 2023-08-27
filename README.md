@@ -2,6 +2,12 @@
 
 This post is a step-by-step implementation of my approach to calculating the ADME(T) properties and it is meant for sharing, studying, and critiquing by fellow researchers who are new and interested in this topic. Most of the research paper that is implemented can be found in **ref** directory. 
 
+###NOTE
+
+Note of the advanced machine learning module is upload in github and save as private repo.
+
+Only [x] is completed a long time ago. 
+
 ### **Physicochemical Properties:**
 
 *   [x] **Molecular Weight**
@@ -21,8 +27,8 @@ This post is a step-by-step implementation of my approach to calculating the ADM
 *   [x] **tPSA**
 *   [x] **LogP**
 *   [ ] **pKa**
-*   [ ] **LogS**
-*   [ ] **LogD7.4**
+*   [x] **LogS**
+*   [x] **LogD7.4**
 
 ---
 
@@ -49,41 +55,40 @@ This post is a step-by-step implementation of my approach to calculating the ADM
 
 ### **Absorption:**
 
-*   [ ] **Caco-2 Permeability**
+*   [x] **Caco-2 Permeability** Using RF and rdkit and chemdesc descriptor
 *   [ ] **MDCK Permeability**
-*   [ ] **HIA**
-*   [ ] **Pgp-substrate**
-*   [ ] **Pgp-inhibitor**
+*   [x] **HIA** Using RF and MACCS Fingerprint
+*   [x] **Pgp-substrate** Using RF and SVM with ECFP4, ECFP6, MACCS
+*   [x] **Pgp-inhibitor** Using RF and SVM with ECFP4, ECFP6, MACCS
 *   [ ] **Oral Bioavailability**
-*   [ ] **F20%**
-*   [ ] **F30%**
+*   [x] **F20%** Using RF and MACCS Fingerprint
+*   [x] **F30%** Using RF and MACCS Fingerprint
 
 ---
 
 ### **Distribution:**
 
-*   [ ] **BBB Penetration**
-*   [ ] **PPB**
-*   [ ] **VD**
-*   [ ] **Fu**
+*   [x] **BBB** Using SVM and ECFP6 with Morgan Fingerprint
+*   [x] **PPB** Using RF and rdkit and chemdesc descriptor
+*   [x] **VD** Using RF and rdkit and chemdesc descriptor
 
 ---
 
 ### **Metabolism:**
 
 *   [ ] **CYP450 inhibitor/substrate**
-*   [ ] **1A2**
-*   [ ] **2C9**
-*   [ ] **2C19**
-*   [ ] **2D6**
-*   [ ] **3A4**
+*   [x] **1A2** Using RF and SVM with ECFP4, ECFP6, MorganFingerprint ( Different Accuracy, Precesion, FPR, Specifivity, ACC, F1 Score)
+*   [x] **2C9**Using RF and SVM with ECFP4, ECFP6, MorganFingerprint ( Different Accuracy, Precesion, FPR, Specifivity, ACC, F1 Score)
+*   [x] **2C19**Using RF and SVM with ECFP4, ECFP6, MorganFingerprint ( Different Accuracy, Precesion, FPR, Specifivity, ACC, F1 Score)
+*   [x] **2D6**Using RF and SVM with ECFP4, ECFP6, MorganFingerprint ( Different Accuracy, Precesion, FPR, Specifivity, ACC, F1 Score)
+*   [x] **3A4**Using RF and SVM with ECFP4, ECFP6, MorganFingerprint ( Different Accuracy, Precesion, FPR, Specifivity, ACC, F1 Score)
 
 ---
 
 ### **Excretion:**
 
-*   [ ] **Half Life**
-*   [ ] **CL**
+*   [x] **Half Life(T1/2)** Using RF with descriptor(rdkit and chemdesc)
+*   [x] **CL** Using RF with descriptor(rdkit and chemdesc)
 
 ---
 
@@ -99,23 +104,22 @@ This post is a step-by-step implementation of my approach to calculating the ADM
 *   [ ] **Sure ChEMBL Rule**
 *   [ ] **FAF-Drugs4 Rule**
 *   [ ] **Ames Mutagenicity**
-*   [ ] **Hepatotoxicity**
+*   [x] **Hepatotoxicity** Using RF and descriptor
 *   [ ] **Eye Corrosion**
 *   [ ] **Eye Irritation**
 *   [ ] **Respiratory Toxicity**
 *   [ ] **Bioconcentration Factor**
-*   [ ] **hERG inhibition/blockers**
+*   [x] **hERG inhibition/blockers** Using Using RF and descriptor with MACCS
 *   [ ] **IGC50**
-*   [ ] **LC50FM**
-*   [ ] **LC50DM**
-*   [ ] **AR**
+*   [x] **LD50** Using RF 2D descriptor
+*   [x] **AMES** Using RF and MACCS
 *   [ ] **AR-LBD**
-*   [ ] **ER**
+*   [x] **SkinSen** Using RF and MACCS
 *   [ ] **ER-LBD**
 *   [ ] **Aromatase**
 *   [ ] **PPAR-Y**
-*   [ ] **AhR**
-*   [ ] **MMP**
+*   [x] **DILI** Using RF and MACCS
+*   [x] **FDAMDO** Using RF and ECFP4
 *   [ ] **p53**
 *   [ ] **ARE**
 *   [ ] **HSE**
