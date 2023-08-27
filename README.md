@@ -2,11 +2,11 @@
 
 This post is a step-by-step implementation of my approach to calculating the ADME(T) properties and it is meant for sharing, studying, and critiquing by fellow researchers who are new and interested in this topic. Most of the research paper that is implemented can be found in **ref** directory. 
 
-###NOTE
+### NOTE
 
 Note of the advanced machine learning module is upload in github and save as private repo.
 
-Only [x] is completed a long time ago. 
+* [x] marked is completed a long time ago. 
 
 ### **Physicochemical Properties:**
 
